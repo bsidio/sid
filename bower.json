@@ -1,0 +1,30 @@
+{
+  "name": "Questionspaper.in",
+  "version": "0.0.2",
+  "description": "Free Download Question Papers",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "keywords": [
+    "Blog",
+    "Hybrid",
+    "App",
+    "Questions",
+    "Paper"
+  ],
+  "authors": [
+    "B Siddhartha"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "polymer": "~0.5.1",
+    "platform": "~1.2.0",
+    "core-ajax": "polymer/core-ajax#~0.5.1",
+    "core-header-panel": "polymer/core-header-panel#~0.5.1",
+    "core-toolbar": "polymer/core-toolbar#~0.5.1"
+  }
+}

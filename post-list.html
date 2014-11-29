@@ -1,0 +1,106 @@
+
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+<link rel="import" href="components/polymer/polymer.html">
+<link rel="import" href="post-service.html">
+<link rel="import" href="blog-post.html">
+ 
+<polymer-element name="post-list">
+  <template>
+    <style>
+    :host {
+      display: block;
+      width: 100%;
+    }
+    blog-post {
+      margin-bottom: 30px;
+    }
+    blog-post h2 a {
+      color: #f45145;
+      text-decoration: none;
+    }
+    blog-post .content {
+      color: #787878;
+      padding-bottom: 9px;
+    }
+    blog-post .date
+    {
+      float: right;
+    }
+    blog-post .name
+    {
+      float: left;
+    }
+    </style>
+ 
+    <post-service id="service" posts="{{posts}}"></post-service>
+    <div layout vertical center>
+      <template repeat="{{post in posts}}">
+        <blog-post>
+          <h2><a href='{{post.url}}'>{{post.title}}</a>
+          </h2>
+          <p class="content">{{post.excerpt}}</p>
+          <p class="name">{{post.name}}</p>
+          <p class="date">{{post.modified}}</p>
+        </blog-post>
+      </template>
+    </div>
+ 
+ 
+  </template>
+ 
+  <script>
+  Polymer({});
+  </script>
+ 
+</polymer-element>
