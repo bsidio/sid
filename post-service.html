@@ -8,7 +8,7 @@
       display: none;
     }
     </style>
-    <core-ajax id="ajax" auto url="http://www.questionspaper.in/api/get_recent_posts/" on-core-response="{{postsLoaded}}" handleAs="json">
+    <core-ajax id="ajax" auto url="http://public-api.wordpress.com/rest/v1/sites/questionspaper.in/posts/?number=&pretty=true" on-core-response="{{postsLoaded}}" handleAs="json">
     </core-ajax>
   </template>
   <script>
